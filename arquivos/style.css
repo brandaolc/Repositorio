@@ -1,0 +1,159 @@
+/* Importa a fonte "Roboto" do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Aplica a todos os elementos:
+- margin e padding zerados para evitar espaços indesejados
+- box-sizing: border-box para incluir padding e borda no tamanho total do elemento
+- Define a fonte "Roboto" como padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Estilo do corpo da página:
+- Define a cor de fundo como cinza */
+body {
+  background-color: rgb(108, 137, 175);
+}
+
+/* Estilo do navbar (barra de navegação):
+- Fundo branco (#ffffff)
+- Texto branco (#fff)
+- Display flex para layout flexível
+- Espaço entre itens (justify-content: space-between)
+- Itens centralizados verticalmente (align-items: center)
+- Padding de 10px em cima/baixo e 20px nas laterais */
+nav {
+  background-color: #ffffff;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Estilo da lista de links de navegação:
+- Remove bullets (list-style-type: none)
+- Display flex para layout horizontal */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+/* Estilo dos itens da lista de links de navegação:
+- Margem direita de 15px para espaçamento entre links */
+.nav-links li {
+  margin-right: 15px;
+}
+
+/* Estilo dos links:
+- Remove sublinhado (text-decoration: none)
+- Cor do texto preta (#000)
+- Texto em negrito (font-weight: bold)
+- Transição suave de cor ao passar o mouse (transition: color 0.3s ease)
+- Tamanho da fonte 30px */
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 30px;
+}
+
+/* Estilo dos links ao passar o mouse:
+- Cor muda para amarelo (#f1c40f) */
+.nav-links li a:hover {
+  color: #f1c40f;
+}
+
+/* Estilo do logo:
+- Cor do texto branca (#fff)
+- Remove sublinhado (text-decoration: none)
+- Tamanho da fonte 1.5rem
+- Texto em negrito (font-weight: bold) */
+.logo a {
+  color: #e7e7e7;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Estilo da imagem do logo:
+- Largura de 120px
+- Transição suave ao passar o mouse (transition: transform 0.3s) */
+.logo img {
+  width: 120px;
+  transition: transform 0.3s;
+}
+
+/* Estilo da imagem do logo ao passar o mouse:
+- Aumenta o tamanho em 20% (transform: scale(1.2)) */
+.logo img:hover {
+  transform: scale(1.2);
+}
+
+/* Estilo do link do logo ao passar o mouse:
+- Cor muda para amarelo (#f1c40f) */
+.logo a:hover {
+  color: #f1c40f;
+}
+
+/* Estilo do conteúdo principal:
+- Padding de 20px em todas as direções
+- Display flex para layout flexível
+- Centraliza conteúdo horizontal e verticalmente (justify-content: center, align-items: center)
+- Texto justificado (text-align: justify) */
+.content {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+/* Animação slideInLeft:
+- Move o elemento da esquerda para a posição original */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Aplica a animação slideInLeft para elementos com classe .shoes:
+- Duração de 1 segundo
+- Mantém a posição final (forwards)
+- Margem esquerda de 180px */
+.shoes {
+  animation: slideInLeft 1s forwards;
+  margin-left: 180px;
+}
+
+/* Animação slideRight:
+- Move o elemento da direita para a posição original */
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Estilo do texto dentro do conteúdo:
+- Tamanho da fonte 18px
+- Largura máxima de 800px
+- Centraliza o texto (margin: 0 auto)
+- Espaçamento entre letras de 1px
+- Aplica a animação slideRight com duração de 1 segundo e mantém a posição final */
+.content span {
+  font-size: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  animation: slideRight 1s forwards;
+}
