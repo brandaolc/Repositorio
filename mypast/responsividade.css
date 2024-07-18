@@ -1,0 +1,67 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.content {
+    flex: 2;
+    padding: 10px;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media queries para layout responsivo */
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        order: -1; /* Muda a ordem na visualização mobile */
+    }
+}
