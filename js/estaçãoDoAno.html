@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let mes = parseInt(prompt("Digite o número do mês (1 a 12):"));
+let estacao;
+
+switch (mes) {
+    case 1:
+    case 2:
+    case 12:
+        estacao = "Verão";
+        break;
+    case 3:
+    case 4:
+    case 5:
+        estacao = "Outono";
+        break;
+    case 6:
+    case 7:
+    case 8:
+        estacao = "Inverno";
+        break;
+    case 9:
+    case 10:
+    case 11:
+        estacao = "Primavera";
+        break;
+    default:
+        alert("Mês inválido.");
+}
+
+if (estacao) {
+    alert(`Para o mês ${mes}, a estação é ${estacao}.`);
+}
+
+</script>
+<body>
+    
+</body>
+</html>
