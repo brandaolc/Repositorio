@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte para todo o corpo do documento */
+    background-color: #f0f0f0; /* Cor de fundo do corpo da página */
+    display: flex; /* Define o layout flexível para o corpo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura do corpo para ocupar 100% da altura da viewport */
+}
+.form-container {
+    background-color: #fff; /* Cor de fundo do contêiner do formulário */
+    padding: 20px; /* Espaçamento interno do contêiner */
+    border-radius: 5px; /* Borda arredondada do contêiner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do contêiner */
+}
+.form-container h2 {
+    margin-bottom: 20px; /* Margem inferior do título do formulário */
+}
+.form-container input {
+    width: 95%; /* Largura dos campos de entrada (95% da largura do contêiner) */
+    padding: 10px; /* Espaçamento interno dos campos de entrada */
+    margin: 10px 0; /* Margem entre os campos de entrada */
+    border: 1px solid #ccc; /* Borda dos campos de entrada */
+    border-radius: 4px; /* Borda arredondada dos campos de entrada */
+}
+.form-container button {
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 4px; /* Borda arredondada do botão */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+}
+.form-container button:hover {
+    background-color: #45a049; /* Cor de fundo do botão ao passar o cursor sobre ele */
+}
