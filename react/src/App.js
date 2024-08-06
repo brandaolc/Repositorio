@@ -1,17 +1,10 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar';
-import Home from './components/Home/Home';
-import Footer from './components/Footer/Footer';
-
+import Welcome from './components/Welcome/Welcome';
 
 function App() {
   return (
     <div>
-      <>
-      <Navbar/>
-      <Home/>
-      <Footer/>
-      </>
+      <Welcome />
     </div>
   );
 }
