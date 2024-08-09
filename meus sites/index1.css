@@ -1,0 +1,46 @@
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(253, 245, 245);
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    width: 80%;
+    margin: 20px;
+    background-color: rgb(233, 201, 201);
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10x rba(0, 0, 0, 0.1);
+}
+header{ 
+    text-align: center;
+    margin-bottom: 20px;
+}
+.profile{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    
+
+}
+.profile-picture img{
+    width: 100px;
+height: 100px; /* Define a altura da imagem de perfil */
+border-radius: 50%; /* Adiciona um formato circular à imagem de perfil */
+object-fit: cover; /* Redimensiona a imagem para cobrir a área sem distorcer */
+border: 2px solid #ddd;
+}
+.profile-details {
+    flex: 1; /* Faz com que o elemento ocupe todo o espaço disponível no container flexível */
+    margin-left: 20px; /* Adiciona uma margem à esquerda para separar dos outros elementos */
+}
+footer {
+    text-align: center; /* Centraliza o texto dentro do elemento footer */
+    margin-top: 20px; /* Adiciona uma margem superior para separar do conteúdo anterior */
+    padding-top: 10px; /* Adiciona preenchimento interno na parte superior */
+    border-top: 1px solid #ddd; /* Adiciona uma linha fina no topo do elemento */
+}
+</style>
